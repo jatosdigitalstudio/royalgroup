@@ -8,6 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/#about' },
     { name: 'Company', path: '/#company' },
     { name: 'Products', path: '/#product' },
@@ -37,7 +38,7 @@ export default function Header() {
               <div key={item.path}>
                 <Link
                   href={item.path}
-                  className={`${isScrolled ? 'text-black' : 'text-white'} font-medium transition-colors hover-underline-animation`}
+                  className={`${isScrolled ? 'text-black' : 'text-white'} font-reguler transition-colors hover-underline-animation`}
                 >
                   {item.name}
                 </Link>

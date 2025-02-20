@@ -11,12 +11,16 @@ export default function About() {
                 <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
                 <DotLottieReact
                     src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
-                    className='my-[-120px]'
+                    className='h-[36em] my-[-6em]'
                     loop
                     autoplay
                 />
             </div>
-            <div className="flex flex-end items-end justify-end">
+            <div className="flex items-end justify-between mt-12">
+                <h6 className='text-left uppercase'>
+                    Powering Indonesia's <br/>
+                    <span className='text-7xl text-blue'>Digital Future</span>
+                </h6>
                 <h6 className='text-right uppercase'>
                     Royal Group evolving as <br/> a strategic partner, is now focused on 
                     five key sectors <br/> driving Indonesia’s future in this digital era.
