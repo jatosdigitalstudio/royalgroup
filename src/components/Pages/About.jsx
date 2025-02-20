@@ -11,7 +11,7 @@ export default function About() {
                 <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
                 <DotLottieReact
                     src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
-                    className='my-[-120px] w-300'
+                    className='my-[-120px]'
                     loop
                     autoplay
                 />
