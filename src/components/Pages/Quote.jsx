@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-// import Image from 'next/image';
+import Image from 'next/image';
 // import { useScroll, useTransform, motion } from 'framer-motion';
 // import { useRef } from 'react';
 // import { Button } from '../UI/Button';
@@ -20,18 +20,21 @@ export default function Quote() {
     // const x = useTransform(scrollXProgress, [0, 2], ["100vh", "-150vh"])
   
     return (
-      <div className='flex justify-center items-center py-32 bg-blue'>
-        <div className="flex flex-col text-center items-center  w-[50%] md:px-22 text-white">
+      <div className='flex relative justify-center items-center py-32 bg-blue overflow-hidden'>
+        <div className="flex flex-col text-center items-center  w-[50%] md:px-22 text-white z-30">
+            <Image src="/images/icon-w.png" width={50} height={50} alt='Icon Royal Group' className='mb-4 brightness-200' />
             <h1 className='text-4xl md:text-6xl mb-6 uppercase'>Investing in tomorrow together</h1>
             <p className='w-[70%]'>We believe that strong partnerships between the public and private 
                 sectors are essential to achieving Indonesia’s amitious goals in this digital era. 
                 We Invite you to join us in shaping Indonesia's digital future</p>
         </div>
         {/* <Image 
-            src="/calltoaction.jpg" fill 
-            alt="Partner with Sabika Group" 
+            src="/images/icon-w.png" 
+            alt="Logo Royal Group" 
+            width={1000}
+            height={1000}
             style={{objectFit: "cover"}} 
-            className='brightness-[30%] relative'
+            className='absolute left-0 bottom-20 z-10 brightness-100'
         /> */}
       </div>
     )

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Product() {
   return (
-    <section className="h-screen py-24" id='product'>
+    <section className="h-screen py-24" id='companies'>
         <div className="container mx-auto px-6 lg:px-12">
             <div className="flex flex-col justify-center items-center">
                 <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' />

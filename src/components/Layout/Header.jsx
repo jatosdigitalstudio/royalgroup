@@ -9,9 +9,9 @@ export default function Header() {
 
   const navItems = [
     { name: 'Home', path: '/#home' },
+    // { name: 'About', path: '/#about' },
     { name: 'About', path: '/#about' },
-    { name: 'Company', path: '/#company' },
-    { name: 'Products', path: '/#product' },
+    { name: 'Companies', path: '/#companies' },
     { name: 'Contact Us', path: '/#contact' },
   ];
 
@@ -38,7 +38,7 @@ export default function Header() {
               <div key={item.path}>
                 <Link
                   href={item.path}
-                  className={`${isScrolled ? 'text-black' : 'text-white'} font-reguler transition-colors hover-underline-animation`}
+                  className={`${isScrolled ? 'text-black' : 'text-black'} font-reguler transition-colors hover-underline-animation`}
                 >
                   {item.name}
                 </Link>

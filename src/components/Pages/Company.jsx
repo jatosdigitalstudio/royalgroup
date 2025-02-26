@@ -1,17 +1,29 @@
 "use client"
 // import { motion } from "framer-motion"
 // import { fadeUpVariant } from "@/utils/custom"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Image from 'next/image';
 
 export default function Company() {
     return (
-        <section className="relative h-screen flex items-center justify-center py-32" id="company">
+        <section className="relative h-screen flex items-center justify-center py-24" id="about">
             <div className="container mx-auto px-12">
                 <div className="grid grid-cols-2 place-items-center">
-                    <div className="bg-[#ffffff] w-[450px] h-[500px]">
-                       
+                    <div className="">
+                        <DotLottieReact
+                            src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
+                            loop
+                            autoplay
+                        />
+                        <h6 className='text-left uppercase'>
+                            Powering Indonesia's <br/>
+                            <span className='text-7xl text-blue'>Digital Future</span>
+                        </h6>
                     </div>
                     <div className="text-black flex flex-col justify-center px-6 lg:px-24">
-                            <h1 className="text-3xl md:text-4xl font-medium mb-6 uppercase">
+                            <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' />
+                            <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
+                            <h1 className="text-3xl md:text-4xl font-medium my-6 uppercase">
                                 Achieving Excellence throught Collaboration
                             </h1>
                             <p>
