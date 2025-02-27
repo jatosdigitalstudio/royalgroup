@@ -18,6 +18,13 @@ export default {
         cream: "#F6EFE5",
         blue: "#1B3251"
       },
+      backgroundImage: {
+        sector1 : "/images/defence_security_01.jpg",
+        sector2 : "/images/digital_transformation.jpg",
+        sector3 : "/images/biotech_01.jpg",
+        sector4 : "/images/sustainability_01.jpg",
+        sector5 : "/images/lifestyle_03.jpg",
+      }
     },
   },
   plugins: [],

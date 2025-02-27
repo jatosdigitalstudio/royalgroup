@@ -7,7 +7,7 @@ import Quote from "@/components/Pages/Quote";
 import Contact from "@/components/Pages/Contact";
 export default function Home() {
   return (
-    <div>
+     <div>
       <Hero/>
       {/* <About/> */}
       <Company/>

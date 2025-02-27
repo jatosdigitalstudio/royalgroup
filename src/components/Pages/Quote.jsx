@@ -28,14 +28,14 @@ export default function Quote() {
                 sectors are essential to achieving Indonesia’s amitious goals in this digital era. 
                 We Invite you to join us in shaping Indonesia's digital future</p>
         </div>
-        {/* <Image 
-            src="/images/icon-w.png" 
+        <Image 
+            src="/images/icon-big.png" 
             alt="Logo Royal Group" 
             width={1000}
             height={1000}
             style={{objectFit: "cover"}} 
-            className='absolute left-0 bottom-20 z-10 brightness-100'
-        /> */}
+            className='absolute z-10 brightness-100'
+        />
       </div>
     )
 }
