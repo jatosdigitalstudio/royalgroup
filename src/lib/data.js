@@ -3,11 +3,11 @@ export const SECTOR = [
     {
         id: 1,
         name: 'Defense & Security',
-        style: "row-span-2 min-h-[400px]",
+        style: "row-span-2 ",
         image: "/images/defence_security_01.jpg",
         companies: [
             { name: 'PT Radika Karya Utama', description: 'Since inception in 1998, PT Radika Karya Utama has grown into a well-recognized provider of infrastructure, advanced networking, unified communications, security, servers and hardware sales and support, which aid our customers achieve their organizational target.' },
-            { name: 'PT Fazza Royal Yantasir Simulasi', description: 'PT. Fazza Royal Yantasir Simulasi is a dynamic, innovative and creative company based in Jakarta that established in 2019 from a synergy of two business partners that have a lot of experience in simulation and technology. With the concept of Total Solution for simulations, we specialize in Advance Innovative Simulation Technologies with advance simulation development platform' },
+            { name: 'PT Fazza Royal Yantasir Simulasi', description: 'PT. Fazza Royal Yantasir Simulasi is a dynamic, innovative and creative company based in Jakarta that established in 2019 from a synergy of two business partners that have a lot of experience in simulation and technology. With the concept of Total Solution for simulations.' },
         ]
     },
     {
@@ -16,11 +16,11 @@ export const SECTOR = [
         style: "bg-center",
         image: "/images/digital_transformation.jpg",
         companies: [
-            { name: 'RGMS', description: 'Combining the adoption of blockchain technology with e-sport gaming industry, RGMS works with various sport associations in harnessing the power of blockchains technology to revolutionize the industry through partnership with top academia, Decentralized Finance Blockchains Entities (DeFi) and multiple metaverse platforms to be able to reach the unreachable.' },
+            { name: 'RGMS', description: 'Combining the adoption of blockchain technology with e-sport gaming industry, RGMS works with various sport associations in harnessing the power of blockchains technology to revolutionize the industry through partnership.' },
             { name: "Nature's Vault", description: "Nature's Vault is committed to creating a more sustainable future through innovative technology and responsible resource management. Together, we can ensure that the earth's treasures are used wisely and preserved for generations to come." },
-            { name: "TOTM", description: "TOTM Technologies provides end-to-end identity management and biometrics products, powering Digital identity and Digital onboarding solutions. That includes NIST-rated core biometrics matching software that is proven in ultra large scale identity deployments. Our in-house expertise comprises innovators, disruptors and technologists providing best-of- breed, integrated and highly-scalable solutions that span across domains and use-cases such as national ID, automated border control, finance & fintech, healthcare and critical infrastructure access control." },
-            { name: "InterBIO", description: "Identification, authentication, authorization interBIO is the leading identity management biometric software solutions company with state of the art technology, robust platform and its core team in Indonesia and India, working together with partners from US, Europe and ASEAN. Our platforms are based on core technologies like face, finger and iris biometrics listed in top tier in NIST benchmark." },
-            { name: "Ajari", description: "At AJARI, we understand that traditional education can be limiting and fail to provide students with the necessary tools to excel in today's fast-paced and rapidly changing technological landscape. That's why we leverage cutting-edge technology and personalized learning techniques to help students achieve their full potential." },
+            { name: "TOTM", description: "TOTM Technologies provides end-to-end identity management and biometrics products, powering Digital identity and Digital onboarding solutions. That includes NIST-rated core biometrics matching software that is proven in ultra large scale identity deployments. " },
+            { name: "InterBIO", description: "Identification, authentication, authorization interBIO is the leading identity management biometric software solutions company with state of the art technology, robust platform and its core team in Indonesia and India, working together with partners from US, Europe and ASEAN. " },
+            { name: "Ajari", description: "At AJARI, we understand that traditional education can be limiting and fail to provide students with the necessary tools to excel in today's fast-paced and rapidly changing technological landscape. That's why we leverage cutting-edge technology and personalized learning techniques." },
         ]
     },
     {

@@ -14,7 +14,6 @@ export default function Modal({ sector, onClose }) {
             className="bg-blue rounded-md px-12 py-10 max-w-7xl h-full w-full"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
             transition={{ duration: 0.2 }}
             >
             <div className="flex justify-between items-center mb-8">
@@ -30,7 +29,7 @@ export default function Modal({ sector, onClose }) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto">
             {sector.companies.map((company, index) => (
                 <Link href="/" key={index}>
-                    <div className="min-h-48  p-4 bg-gray-50 rounded-sm">
+                    <div className="min-h-36 p-4 bg-gray-50 rounded-sm">
                         <h3 className="mb-2 font-semibold">{company.name}</h3>
                         <p className="text-sm text-gray-600">{company.description}</p>
                     </div>

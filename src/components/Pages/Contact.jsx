@@ -44,7 +44,7 @@ export default function Contact() {
 }
 
     return (
-        <section className="w-full flex items-center justify-center py-24" id="contact">
+        <section className="w-full flex items-center justify-center py-24 px-8" id="contact">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center">
                 <div className="bg-blue w-full h-full">
                 </div>
