@@ -11,7 +11,7 @@ export default function Modal({ sector, onClose }) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex items-center justify-center p-8 z-50">
         <motion.div 
-            className="bg-blue rounded-md px-12 py-10 max-w-7xl h-full w-full"
+            className="overflow-y-auto bg-blue rounded-md px-8 py-10 max-w-7xl h-full w-full"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.2 }}

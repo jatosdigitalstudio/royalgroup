@@ -1,15 +1,32 @@
 "use client"
-
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import Image from 'next/image';
 import Modal from '../UI/Modal';
 import Card from "../UI/Card";
 import { SECTOR } from "@/lib/data";
 
-
 export default function Product() {
-    const [showModal, setShowModal] = useState(false);
     const [selectedSector, setSelectedSector] = useState(null);
+    const [widthWindow, setWidthWindow] = useState(768)
+    const [isMobile, setIsMobile] = useState(true)
+
+    useEffect(() => {
+        const handleResize = () => {
+        const widthWindowInsideResize = window.innerWidth
+            if (widthWindowInsideResize <= widthWindow) {
+                setIsMobile(true)
+            } else {
+                setIsMobile(false)
+            }
+        }
+
+        window.addEventListener("resize", handleResize)
+        handleResize()
+
+        return () => {
+        window.removeEventListener("resize", handleResize)
+        }
+    }, [])
 
     return (
         <section className="lg:h-screen py-24" id='companies'>
@@ -33,9 +50,8 @@ export default function Product() {
                          <Card
                             key={sector.id}
                             sector={sector}
-                            style={sector.style}
+                            style={ isMobile ? "grid" : sector.style}
                             onClick={() => setSelectedSector(sector)}
-                            data-aos="fade-up"
                        />
                     
                     ))}
@@ -44,29 +60,6 @@ export default function Product() {
                     sector={selectedSector}
                     onClose={() => setSelectedSector(null)}
                 />
-
-                {/* <div className="grid grid-cols-4 grid-rows-5 gap-2 mt-12 text-white" >
-                    <button onClick={() => setSelectedSector()} className="row-span-2 bg-blue min-h-[400px]">
-                        <div className='p-6 bottom-0'>Defense & Security</div>
-                    </button>
-                    {showModal &&
-                        <Modal onClose={() => setShowModal(false)}>
-                            Hello from the modal!
-                        </Modal>
-                    }
-                    <div href="/" className='bg-blue'>
-                        <div className='p-6 bottom-0'>Digital Transformation</div>
-                    </div>
-                    <div href="/" className="col-start-2 row-start-2 bg-blue">
-                        <div className='p-6 bottom-0'>Biotechnology</div>
-                    </div>
-                    <div href="/" className="row-span-2 col-start-3 row-start-1 bg-blue min-h-[400px]">
-                        <div className='p-6 bottom-0'>Sustainability</div>
-                    </div>
-                    <div href="/" className="row-span-2 col-start-4 row-start-1 bg-blue min-h-[400px]">
-                        <div className='p-6 bottom-0'>Lifestyle</div>
-                    </div>
-                </div> */}
             </div>
         </section>
     );

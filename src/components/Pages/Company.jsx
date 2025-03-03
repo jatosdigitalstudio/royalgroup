@@ -10,11 +10,11 @@ export default function Company() {
             <div className="container mx-auto px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                     <div className="" >
-                            <DotLottieReact
-                                src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
-                                loop
-                                autoplay
-                            />
+                        <DotLottieReact
+                            src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
+                            loop
+                            autoplay
+                        />
                         <div className="" data-aos="fade-right">
                             <h6 className='text-left md:ml-14 uppercase'>
                                 Powering Indonesia's <br/>

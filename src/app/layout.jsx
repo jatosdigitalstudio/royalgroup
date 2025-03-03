@@ -3,7 +3,7 @@ import "@/styles/globals.css"
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import ScrollToTopButton from "@/components/UI/ScrollToTopButton";
-import Head from "./head";
+import SEO from "./head";
 import { AOSInit } from "./aos";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AOSInit/>
-      <Head/>
+      <SEO />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-cream`}
       >

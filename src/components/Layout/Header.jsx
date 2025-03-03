@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}
           <Link href="/">
-            <Image src="/images/logo-h-main.png" width={isScrolled ? 100 : 200} height={100} alt='Royal Group' />
+            <Image src="/images/logo-h-main.png" width={200} height={100} alt='Royal Group' />
           </Link>
           {/* Desktop Menu */}
 

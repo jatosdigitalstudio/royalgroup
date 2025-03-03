@@ -46,17 +46,17 @@ export default function Contact() {
     return (
         <section className="w-full flex items-center justify-center py-24 px-8" id="contact">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center">
-                <div className="bg-blue w-full h-full">
+                <div className="bg-blue w-full h-full" >
                 </div>
                 <div className="flex flex-col w-full">
                     <div className="" data-aos="zoom-in">
                         <Image src="/images/logo-h-main.png" width={150} height={100} alt="Logo Royal Group" className="ml-[-10px] mb-6" />
                     </div>
-                    <div className="mb-6">
+                    <div className="mb-6" data-aos="fade-up">
                         <h1 className="font-bold mb-2">Office:</h1>
                         <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
                     </div>
-                    <div className="" >
+                    <div className="" data-aos="fade-up" >
                         <h1 className="font-bold mb-2">Contact Us:</h1>
                         <div className="bg-blue  px-8 py-10">
                             <form onSubmit={handleSubmit}>
