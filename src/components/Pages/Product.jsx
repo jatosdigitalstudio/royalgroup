@@ -1,32 +1,15 @@
 "use client"
-import {useState, useEffect} from "react";
+
+import {useState} from "react";
 import Image from 'next/image';
 import Modal from '../UI/Modal';
 import Card from "../UI/Card";
 import { SECTOR } from "@/lib/data";
+import { useWidthSize } from "@/utils/custom";
 
 export default function Product() {
     const [selectedSector, setSelectedSector] = useState(null);
-    const [widthWindow, setWidthWindow] = useState(768)
-    const [isMobile, setIsMobile] = useState(true)
-
-    useEffect(() => {
-        const handleResize = () => {
-        const widthWindowInsideResize = window.innerWidth
-            if (widthWindowInsideResize <= widthWindow) {
-                setIsMobile(true)
-            } else {
-                setIsMobile(false)
-            }
-        }
-
-        window.addEventListener("resize", handleResize)
-        handleResize()
-
-        return () => {
-        window.removeEventListener("resize", handleResize)
-        }
-    }, [])
+    const { isMobile } = useWidthSize()
 
     return (
         <section className="lg:h-screen py-24" id='companies'>
@@ -44,16 +27,15 @@ export default function Product() {
                     </div>
                 </div>
 
-
                 <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-5 gap-2 mt-12 text-white content-end" >
                     {SECTOR.map((sector) => (
                          <Card
                             key={sector.id}
                             sector={sector}
-                            style={ isMobile ? "grid" : sector.style}
+                            style={isMobile ? "" : sector.style}
                             onClick={() => setSelectedSector(sector)}
+                            data-aos="fade-up"
                        />
-                    
                     ))}
                 </div>
                 <Modal
