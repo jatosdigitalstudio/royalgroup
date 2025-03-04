@@ -27,7 +27,8 @@ export default function Product() {
                     </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-1 md:grid-cols-4 md:grid-rows-5 gap-2 mt-12 text-white content-end" >
+
+                <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-5 gap-2 mt-12 text-white content-end" >
                     {SECTOR.map((sector) => (
                          <Card
                             key={sector.id}
@@ -39,21 +40,33 @@ export default function Product() {
                     
                     ))}
                 </div>
-                <div className="md:hidden grid grid-cols-1 md:grid-cols-4 md:grid-rows-5 gap-2 mt-12 text-white content-end" >
-                    {SECTOR.map((sector) => (
-                         <Card
-                            key={sector.id}
-                            sector={sector}
-                            onClick={() => setSelectedSector(sector)}
-                            data-aos="fade-up"
-                       />
-                    
-                    ))}
-                </div>
                 <Modal
                     sector={selectedSector}
                     onClose={() => setSelectedSector(null)}
                 />
+
+                {/* <div className="grid grid-cols-4 grid-rows-5 gap-2 mt-12 text-white" >
+                    <button onClick={() => setSelectedSector()} className="row-span-2 bg-blue min-h-[400px]">
+                        <div className='p-6 bottom-0'>Defense & Security</div>
+                    </button>
+                    {showModal &&
+                        <Modal onClose={() => setShowModal(false)}>
+                            Hello from the modal!
+                        </Modal>
+                    }
+                    <div href="/" className='bg-blue'>
+                        <div className='p-6 bottom-0'>Digital Transformation</div>
+                    </div>
+                    <div href="/" className="col-start-2 row-start-2 bg-blue">
+                        <div className='p-6 bottom-0'>Biotechnology</div>
+                    </div>
+                    <div href="/" className="row-span-2 col-start-3 row-start-1 bg-blue min-h-[400px]">
+                        <div className='p-6 bottom-0'>Sustainability</div>
+                    </div>
+                    <div href="/" className="row-span-2 col-start-4 row-start-1 bg-blue min-h-[400px]">
+                        <div className='p-6 bottom-0'>Lifestyle</div>
+                    </div>
+                </div> */}
             </div>
         </section>
     );
