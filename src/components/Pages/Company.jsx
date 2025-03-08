@@ -15,10 +15,12 @@ export default function Company() {
                             loop
                             autoplay
                         />
-                        <div className="" data-aos="fade-right">
-                            <h6 className='text-left md:ml-14 uppercase'>
-                                Powering Indonesia's <br/>
-                                <span className='text-7xl text-blue'>Digital Future</span>
+                        <div className="text-left md:ml-14 uppercase" data-aos="fade-right">
+                            <h6 className='font-third text-2xl mb-4'>
+                               Powering Indonesia's 
+                            </h6>
+                            <h6 className='text-7xl ml-[-6px] text-blue'>
+                               Digital Future
                             </h6>
                         </div>
                     </div>

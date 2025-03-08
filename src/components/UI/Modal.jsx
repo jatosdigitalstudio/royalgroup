@@ -14,13 +14,13 @@ export default function Modal({ sector, onClose }) {
             className="overflow-y-auto bg-blue rounded-md px-8 py-10 max-w-7xl h-full w-full"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.2, type:'keyframes',  }}
             >
             <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl text-white font-bold">{sector.name}</h2>
             <button 
                 onClick={onClose}
-                className="text-gray-500 hover:text-white"
+                className="text-white"
             >
                 ✕
             </button>

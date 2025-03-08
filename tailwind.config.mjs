@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         text: ['var(--font-text)'],
+        third: ['var(--font-third)'],
         style: ['var(--font-style)'],
       },
       colors: {
