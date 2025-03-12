@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Company() {
     return (
-        <section className="relative h-screen flex items-center justify-center py-24" id="about">
+        <section className="relative h-screen flex items-center justify-center my-24" id="about">
             <div className="container mx-auto px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                     <div className="" >

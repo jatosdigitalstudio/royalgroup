@@ -1,33 +1,29 @@
-
 import { useEffect, useState } from "react"
 
-export const useWidthSize = () => {
-  const [widthWindow, setWidthWindow] = useState(768)
-  const [isMobile, setIsMobile] = useState(true)
+export function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
 
   useEffect(() => {
-    const handleResize = () => {
-      const widthWindowInsideResize = window.innerWidth
-      if (widthWindowInsideResize <= widthWindow) {
-        setIsMobile(true)
-      } else {
-        setIsMobile(false)
-      }
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     }
-
-    window.addEventListener("resize", handleResize)
-    handleResize()
-
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
-
-  return { isMobile, widthWindow }
+    
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); 
+  return windowSize;
 }
 
 export function capitalizeFirstLetter(str) {
-    return str[0].toUpperCase() + str.slice(1);
+  return str[0].toUpperCase() + str.slice(1);
 }
 
 export const fadeUpVariant = {
@@ -41,7 +37,6 @@ export const fadeUpVariant = {
   },
 }; 
 
-
 export const fadeUpVariant2 = {
   initial: {opacity: 0, y: 100},
   animate: {
@@ -52,7 +47,6 @@ export const fadeUpVariant2 = {
     },
   },
 }; 
-
 
 export const fadeUpVariant3 = {
   initial: {opacity: 0, y: 100},
