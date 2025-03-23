@@ -13,7 +13,7 @@ export default function Product() {
     const isMobile = size.width < 768
 
     return (
-        <section className="lg:h-screen py-24" id='companies'>
+        <section className="lg:h-screen py-34" id='companies'>
             <div className="container mx-auto px-6 lg:px-12" id='modal-root' >
                 <div className="flex flex-col justify-center items-center">
                     <div className="" data-aos="zoom-in">

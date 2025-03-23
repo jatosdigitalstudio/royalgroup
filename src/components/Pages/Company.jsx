@@ -24,9 +24,9 @@ export default function Company() {
                             </h6>
                         </div>
                     </div>
-                    <div className="text-black flex flex-col justify-center mt-8 lg:px-24">
-                        <div className="" data-aos="zoom-in">
-                            <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' />
+                    <div className="text-black flex flex-col text-right mt-8 lg:px-24">
+                        <div className="flex flex-col items-end" data-aos="zoom-in">
+                            <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' className='right-0' />
                             <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
                         </div>
                         <div 
