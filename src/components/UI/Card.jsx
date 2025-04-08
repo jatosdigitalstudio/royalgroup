@@ -22,7 +22,7 @@ export default function Card({ sector, onClick, style }) {
       
       {/* Content */}
       <div className="relative flex h-full flex-col items-start justify-end p-6 text-left text-white">
-        <h2 className="text-2xl font-bold">{sector.name}</h2>
+        <h2 className="text-2xl font-bold">{sector.title}</h2>
         <p className="mt-2 text-sm opacity-90">
           {sector.companies.length} companies 
         </p>
