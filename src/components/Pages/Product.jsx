@@ -12,6 +12,7 @@ export default function Product() {
     const size = useWindowSize()
     const isMobile = size.width < 768
 
+
     return (
         <section className="lg:h-screen py-40 md:py-0" id='companies'>
             <div className="container mx-auto px-6 lg:px-12" id='modal-root' >

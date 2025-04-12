@@ -57,8 +57,8 @@ export default function Contact() {
                             <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
                         </div>
                         <div className="mb-6" data-aos="fade-up">
-                            <h1 className="font-bold mb-2">Contact:</h1>
-                            <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
+                            <h1 className=" font-bold mb-2">Contact:</h1>
+                            <p className="text-md">EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
                         </div>
                     </div>
                 </div>

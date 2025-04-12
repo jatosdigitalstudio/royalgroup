@@ -11,7 +11,7 @@ export default function Company() {
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                     <div className="" >
                         <DotLottieReact
-                            src="https://lottie.host/fa76d6b0-dff1-4c73-a923-a2f4bf763ba3/XT157Ndazy.lottie"
+                            src="/indonesia.lottie"
                             loop
                             autoplay
                         />

@@ -1,19 +1,20 @@
 'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
 import * as motion from "motion/react-client"
 import Image from 'next/image';
+import { MdArrowRight } from "react-icons/md";
 
 export default function Modal({ sector, onClose }) {
   if (!sector) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex items-center justify-center p-8 z-50">
+    <div 
+        className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex items-center justify-center p-8 z-50" 
+        >
         <motion.div 
-            className="relative overflow-y-auto rounded-md px-8 py-10 max-w-7xl h-full w-full"
+            className="relative overflow-y-auto rounded-md px-6 md:px-12 py-10 max-w-5xl h-full w-full"
             style={{
-                background: `linear-gradient(rgba(27, 50, 81, 1), rgba(27, 50, 81, .8)), url(${sector.image})`,
+                background: `linear-gradient(rgba(27, 50, 81, 1), rgba(27, 50, 81, .85)), url(${sector.image})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}
@@ -25,7 +26,7 @@ export default function Modal({ sector, onClose }) {
                 <div className="flex flex-col space-y-2">
                     <h2 className="text-sm md:text-md text-white font-third uppercase">{sector.subtitle}</h2>
                     <h2 className="text-xl md:text-3xl text-white font-bold">{sector.title}</h2>
-                    <h2 className="text-xs md:text-sm font-normal text-white md:w-[80%]">{sector.text}</h2>
+                    <h2 className="text-xs md:text-sm font-normal font-text text-white md:w-[80%]">{sector.text}</h2>
                 </div>
             
                 <button 
@@ -36,21 +37,26 @@ export default function Modal({ sector, onClose }) {
                 </button>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto">
+            <div className="grid grid-cols-1 gap-6 md:divide-y-2 overflow-y-auto">
                 {sector.companies.map((company, index) => (
-                    <Link href="/" key={index}>
-                        <div className="min-h-36 p-4 border border-gray rounded-sm">
-                            <div className="flex flex-col gap-4 justify-center items-start md:flex-row">
+                        <div className="min-h-36 md:p-4 rounded-sm" key={index}>
+                            <div className="flex flex-col gap-6 justify-center items-start md:flex-row">
                                 <Image
                                     src={company.image} 
                                     alt={company.name}
-                                    width={100}
-                                    height={100}
+                                    width={300}
+                                    height={300}
                                 />
-                                <p className="text-sm text-white">{company.description}</p>
+                                <div className="flex flex-col text-white">
+                                    <h1 className="text-lg font-bold ">{company.name}</h1>
+                                    <p className="text-sm font-light">{company.description}</p>
+                                    <div className="flex justify-start items-end ml-[-5px] mt-2">
+                                        <MdArrowRight  size={20} />
+                                        <Link href="/" className='text-xs  '>Visit Website</Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </Link>
                 ))}
             </div>
         </motion.div>
