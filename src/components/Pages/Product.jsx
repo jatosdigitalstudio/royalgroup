@@ -1,6 +1,6 @@
 "use client"
 
-import {useState} from "react";
+import {useState, useRef, useEffect} from "react";
 import Image from 'next/image';
 import Modal from '../UI/Modal';
 import Card from "../UI/Card";
@@ -11,7 +11,19 @@ export default function Product() {
     const [selectedSector, setSelectedSector] = useState(null);
     const size = useWindowSize()
     const isMobile = size.width < 768
+    const modalRef = useRef(null)
 
+     
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                setSelectedSector(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
 
     return (
         <section className="lg:h-screen py-40 md:py-0" id='companies'>
@@ -60,6 +72,7 @@ export default function Product() {
                 <Modal
                     sector={selectedSector}
                     onClose={() => setSelectedSector(null)}
+                    ref={modalRef}
                 />
 
                 {/* <div className="grid grid-cols-4 grid-rows-5 gap-2 mt-12 text-white" >
