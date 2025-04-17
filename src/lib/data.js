@@ -15,7 +15,7 @@ export const SECTOR = [
             },
             { 
                 name: 'PT Fazza Royal Yantasir Simulasi',
-                image: "/images/royalkarbon.png",
+                image: "/images/fazza.png",
                 description: 'PT. Fazza Royal Yantasir Simulasi is a dynamic, innovative and creative company based in Jakarta that established in 2019 from a synergy of two business partners that have a lot of experience in simulation and technology. With the concept of Total Solution for simulations.' 
             },
         ]
