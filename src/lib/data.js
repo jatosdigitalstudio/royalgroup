@@ -105,7 +105,7 @@ export const SECTOR = [
         companies: [
             { 
                 name: 'Royal Solusi Karbon', 
-                image: "/images/rsk.png",
+                image: "/images/rsk2.png",
                 description: 'Royal Solusi Karbon as your business partner, by establishing long term partnership to asset owners (where landowners hold the majority of project ownership), creating value on end-to-end carbon project solution from pre-feasibility study to carbon credit selling.' 
             },
             { 
