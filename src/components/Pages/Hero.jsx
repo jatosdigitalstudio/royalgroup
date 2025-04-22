@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import HeroSlider from "../UI/HeroSlider";
 
 export default function Hero() {
   return (
@@ -8,16 +9,8 @@ export default function Hero() {
         <div className="md:p-20" data-aos="fade-up">
             <h1 className="text-5xl lg:text-7xl uppercase text-blue mb-4 font-third">Securing and innovating indonesia</h1>
         </div>
-        <div className="relative bg-blue w-full " >
-          <Image
-            src="/images/biotech_01.jpg"
-            alt="biotech"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }} 
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-cream from-10% to-blue/20 to-50%" />
+        <div className="relative w-full" >
+          <HeroSlider />
         </div>
       </div>
     </section>
