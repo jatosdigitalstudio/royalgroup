@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import { SECTOR } from "@/lib/data";
+import { HEROIMG } from "@/lib/data";
 
 export default function HeroSlider() {
   const settings = {
@@ -18,17 +18,20 @@ export default function HeroSlider() {
     <div className="slider-container">
       <Slider {...settings}>
         {
-            SECTOR.map((item) => (
-                <div className="relative w-full h-full" key={item.id}>
+            HEROIMG.map((item) => (
+                <div className="relative w-full h-full overflow-hidden" key={item.id}>
                   <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={item.alt}
                       width={0}
                       height={0}
                       sizes="100vw"
-                      style={{ width: '100%', height: 'auto' }} 
+                      style={{ 
+                        width: '100%',
+                        height: 'auto',
+                      }} 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-cream from-10% to-cream/40 to-50%" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-cream from-0% to-cream/30 to-45%" />
                 </div>
             ))
         }

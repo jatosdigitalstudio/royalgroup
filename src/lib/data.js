@@ -177,3 +177,37 @@ export const SECTOR = [
         ]
     },
 ];
+
+
+export const HEROIMG = [
+    {
+        id : 1,
+        image : "/images/hero1.png",
+        alt : "Royal Group",
+    },
+    {
+        id : 2,
+        image : "/images/hero2.png",
+        alt : "Royal Group",
+    },
+    {
+        id : 3,
+        image : "/images/hero3.png",
+        alt : "Royal Group",
+    },
+    {
+        id : 4,
+        image : "/images/hero4.png",
+        alt : "Royal Group",
+    },
+    {
+        id : 5,
+        image : "/images/hero5.png",
+        alt : "Royal Group",
+    },
+    {
+        id : 6,
+        image : "/images/hero6.png",
+        alt : "Royal Group",
+    },
+]
