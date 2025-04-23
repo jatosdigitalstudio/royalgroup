@@ -28,10 +28,18 @@ export default function HeroSlider() {
                       height={0}
                       sizes="100vw"
                       style={{ 
+                        objectFit: 'cover',
                         width: '100%',
                         height: 'auto',
                       }} 
                   />
+                  {/* <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    /> */}
                   <div className="absolute inset-0 bg-gradient-to-r from-cream from-0% to-cream/30 to-30%" />
                 </div>
             ))

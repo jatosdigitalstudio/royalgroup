@@ -59,6 +59,7 @@ export default function Contact() {
                         <div className="mb-6" data-aos="fade-up">
                             <h1 className=" font-bold mb-2">Contact:</h1>
                             <div className="flex flex-col">
+                                <span className="text-md">info@royalgroup.co.id</span>
                                 <span className="text-md">+6221-22831337</span>
                                 <span className="text-md">+6221-22832642</span>
                             </div>

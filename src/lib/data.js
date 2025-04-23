@@ -205,9 +205,4 @@ export const HEROIMG = [
         image : "/images/hero5.png",
         alt : "Royal Group",
     },
-    {
-        id : 6,
-        image : "/images/hero6.png",
-        alt : "Royal Group",
-    },
 ]
