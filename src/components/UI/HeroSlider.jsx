@@ -6,6 +6,7 @@ import { HEROIMG } from "@/lib/data";
 export default function HeroSlider() {
   const settings = {
     dots: false,
+    fade: true,
     arrows: false,
     infinite: true,
     autoplay: true,
@@ -31,7 +32,7 @@ export default function HeroSlider() {
                         height: 'auto',
                       }} 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-cream from-0% to-cream/30 to-45%" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-cream from-0% to-cream/30 to-30%" />
                 </div>
             ))
         }

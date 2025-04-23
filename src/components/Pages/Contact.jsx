@@ -51,14 +51,18 @@ export default function Contact() {
                         <Image src="/images/logo-h-main.png" width={300} height={100} alt="Logo Royal Group" className="mb-6" />
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                         <div className="mb-6" data-aos="fade-up">
                             <h1 className="font-bold mb-2">Office:</h1>
                             <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
                         </div>
                         <div className="mb-6" data-aos="fade-up">
                             <h1 className=" font-bold mb-2">Contact:</h1>
-                            <p className="text-md">EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
+                            <div className="flex flex-col">
+                                <span className="text-md">+6221-22831337</span>
+                                <span className="text-md">+6221-22832642</span>
+                            </div>
+                      
                         </div>
                     </div>
                 </div>

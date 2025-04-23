@@ -41,7 +41,7 @@ export default function Modal({ sector, onClose, ref }) {
                 
                 <div className="grid grid-cols-1 gap-8 md:divide-y-2 overflow-y-auto">
                     {sector.companies.map((company, index) => (
-                        <div className="min-h-36 pt-8  rounded-sm" key={index}>
+                        <div className="min-h-36 pt-8 rounded-sm" key={index}>
                             <div className="flex flex-col gap-10 justify-center items-center md:flex-row">
                                 <Image
                                     src={company.image} 
@@ -49,10 +49,10 @@ export default function Modal({ sector, onClose, ref }) {
                                     width={250}
                                     height={100}
                                 />
-                                <div className="flex flex-col text-white">
-                                    <h1 className="text-lg font-bold ">{company.name}</h1>
-                                    <p className="text-sm font-light">{company.description}</p>
-                                    <div className="flex justify-start items-end ml-[-5px] mt-2">
+                                <div className="flex flex-col gap-4 text-white">
+                                    <h1 className="text-lg font-bold">{company.name}</h1>
+                                    <p className="text-sm font-light text-justify">{company.description}</p>
+                                    <div className="flex justify-start items-end ml-[-5px] mt-2 ">
                                         <MdArrowRight size={20} />
                                         <Link href={`https://${company.link}`} target='_blank' rel="noreferrer" passHref={true} className='text-xs'>Visit Website</Link>
                                     </div>
