@@ -51,7 +51,7 @@ export default function Contact() {
                         <Image src="/images/logo-h-main.png" width={300} height={100} alt="Logo Royal Group" className="mb-6" />
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
                         <div className="mb-6" data-aos="fade-up">
                             <h1 className="font-bold mb-2">Office:</h1>
                             <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>

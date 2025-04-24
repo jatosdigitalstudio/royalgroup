@@ -14,12 +14,12 @@ export default function Company() {
                             autoplay
                         />
                         <div className="text-left md:ml-14 uppercase" data-aos="fade-right">
-                            <h6 className='font-third text-2xl mb-4'>
+                            <h1 className='font-third text-2xl mb-4'>
                                Powering Indonesia's 
-                            </h6>
-                            <h6 className='text-7xl ml-[-6px] text-blue'>
+                            </h1>
+                            <h1 className='text-7xl ml-[-6px] text-blue'>
                                Digital Future
-                            </h6>
+                            </h1>
                         </div>
                     </div>
                     <div className="text-black flex flex-col text-right mt-8 lg:px-24">

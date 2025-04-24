@@ -114,7 +114,7 @@ export const SECTOR = [
         subtitle: "Driving digital transformation on Sustainability",
         text: "We are committed to driving sustainable digital transformation because it is essential for building a more equitable andenvironmentally responsible future. By focusing on eco-friendly technologies and inclusive access, we believe digital innovationcan empower communities, improve resource management, and foster a healthier planet for generations to come.",
         style: "row-span-2 col-start-3 row-start-1 min-h-[400px]",
-        image: "/images/sustainability_01.jpg",
+        image: "/images/sustainability_02.jpg",
         companies: [
             { 
                 name: 'Royal Solusi Karbon', 

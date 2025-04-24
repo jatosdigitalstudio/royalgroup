@@ -18,7 +18,7 @@ export default function Card({ sector, onClick, style }) {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-blue/60 to-blue/30" />
       
       {/* Content */}
       <div className="relative flex h-full flex-col items-start justify-end p-6 text-left text-white">
