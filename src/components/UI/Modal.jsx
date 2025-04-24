@@ -5,15 +5,11 @@ import * as motion from "motion/react-client"
 import Image from 'next/image';
 import { MdArrowRight } from "react-icons/md";
 
-export default function Modal({ sector, onClose, ref }) {
-    const modalRef = useRef(null)
+export default function Modal({ sector, onClose, modalRef }) {
     if (!sector) return null;
 
     return (
-        <div 
-            className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex items-center justify-center p-8 z-50" 
-            ref={ref}
-            >
+        <div className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex items-center justify-center p-8 z-50" ref={modalRef}>
             <motion.div 
                 className="relative overflow-y-auto rounded-md px-6 md:px-12 py-10 max-w-5xl h-full w-full"
                 style={{

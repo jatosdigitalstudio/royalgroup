@@ -12,7 +12,6 @@ export default function Product() {
     const size = useWindowSize()
     const isMobile = size.width < 768
     const modalRef = useRef(null)
-
      
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -26,7 +25,7 @@ export default function Product() {
     }, []);
 
     return (
-        <section className="lg:h-screen py-40 md:py-0" id='companies'>
+        <section className="lg:h-screen py-40 md:py-0" id='companies' ref={modalRef}>
             <div className="container mx-auto px-6 lg:px-12" id='modal-root' >
                 <div className="flex flex-col justify-center items-center">
                     <div className="" data-aos="zoom-in">
@@ -72,7 +71,7 @@ export default function Product() {
                 <Modal
                     sector={selectedSector}
                     onClose={() => setSelectedSector(null)}
-                    ref={modalRef}
+                    modalRef={modalRef}
                 />
 
                 {/* <div className="grid grid-cols-4 grid-rows-5 gap-2 mt-12 text-white" >
