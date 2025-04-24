@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from 'next/font/local'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -30,7 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${styleFont.variable} ${textFont.variable} ${thirdFont.variable} font-text antialiased bg-cream`}
       >
-        <ScrollToTopButton/>
+        {/* <ScrollToTopButton/> */}
         <Header/>
           {children}
         <Footer/>

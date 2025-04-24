@@ -16,15 +16,15 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl' : 'bg-transparent '}`}>
-      <div className="lg:container mx-auto p-4">
+    <nav className={`fixed w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl' : 'bg-white/55 backdrop-blur-xl md:bg-transparent'}`}>
+      <div className="md:container mx-auto p-4">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image src="/images/logo-h-main.png" width={150} height={100} alt='Royal Group' />
@@ -63,7 +63,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 px-4 space-y-4">
+          <div className="flex flex-col md:hidden mt-4 px-4 space-y-4">
             {navItems.map((item) => (
               <div key={item.path}>
                 <Link

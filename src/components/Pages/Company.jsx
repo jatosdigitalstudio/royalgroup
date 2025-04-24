@@ -1,6 +1,4 @@
 "use client"
-// import { motion } from "framer-motion"
-// import { fadeUpVariant } from "@/utils/custom"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Image from 'next/image';
 
@@ -29,10 +27,7 @@ export default function Company() {
                             <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' className='right-0' />
                             <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
                         </div>
-                        <div 
-                            data-aos="fade-left" 
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-right">
                             <h1 className="text-2xl md:text-4xl font-medium my-6 uppercase">
                                 Achieving Excellence throught Collaboration
                             </h1>
