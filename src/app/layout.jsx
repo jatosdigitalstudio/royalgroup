@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${styleFont.variable} ${textFont.variable} ${thirdFont.variable} font-text antialiased bg-cream`}
       >
-        {/* <ScrollToTopButton/> */}
+        <ScrollToTopButton/>
         <Header/>
           {children}
         <Footer/>
