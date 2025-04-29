@@ -14,6 +14,7 @@ export default function Hero() {
     arrows: false,
     infinite: true,
     speed: 1000,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1
   };
