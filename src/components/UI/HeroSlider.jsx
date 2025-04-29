@@ -6,12 +6,12 @@ import { HEROIMG } from "@/lib/data";
 export default function HeroSlider() {
   const settings = {
     dots: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     fade: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
     speed: 1000,
-    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1
   };
