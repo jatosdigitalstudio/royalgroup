@@ -206,3 +206,32 @@ export const HEROIMG = [
         alt : "Royal Group",
     },
 ]
+
+
+export const HEROIMGMOBILE = [
+    {
+        id : 1,
+        image : "/images/hero/mhero1.png",
+        alt : "Royal Group Defense & Security",
+    },
+    {
+        id : 2,
+        image : "/images/hero/mhero2.png",
+        alt : "Royal Group Digital Transformation",
+    },
+    {
+        id : 3,
+        image : "/images/hero/mhero3.png",
+        alt : "Royal Group Sustainability",
+    },
+    {
+        id : 4,
+        image : "/images/hero/mhero4.png",
+        alt : "Royal Group Biotechnology",
+    },
+    {
+        id : 5,
+        image : "/images/hero/mhero5.png",
+        alt : "Royal Group Lifestyle",
+    },
+]
