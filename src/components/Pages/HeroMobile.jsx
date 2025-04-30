@@ -18,8 +18,8 @@ export default function HeroMobile() {
     slidesToScroll: 1
   };
   return (
-    <section className="realtive h-screen w-full" id="hero" >
-        <div className="mb-8 absolute !z-30 pt-[12rem] px-8 lg:px-[6rem]">
+    <section className="w-full py-20" id="hero" >
+        <div className="mb-8 absolute !z-30 pt-[10rem] px-8 lg:px-[6rem]">
             <h1 className="text-4xl uppercase text-blue mb-4 font-third">Securing and <br />innovating <br /> indonesia</h1>
         </div>
         <Slider {...settings}>
