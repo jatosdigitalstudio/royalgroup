@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "@/styles/globals.css"
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
-import ScrollToTopButton from "@/components/UI/ScrollToTopButton";
 import Head from "./head";
 import { AOSInit } from "./aos";
+import BackToTopButton from '@/components/UI/BackToTopButton';
 
 const styleFont = localFont({ 
   src: '../styles/Mortend.ttf',
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${styleFont.variable} ${textFont.variable} ${thirdFont.variable} font-text antialiased bg-cream`}
       >
-        <ScrollToTopButton/>
+        <BackToTopButton/>
         <Header/>
           {children}
         <Footer/>
