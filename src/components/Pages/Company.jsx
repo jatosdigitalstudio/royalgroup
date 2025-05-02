@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Company() {
     return (
-        <section className="relative h-screen flex items-center justify-center my-24" id="about">
+        <section className="relative h-screen flex items-center justify-center my-24 z-40" id="about">
             <div className="container mx-auto px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                     <div className="" >
@@ -29,7 +29,7 @@ export default function Company() {
                         </div>
                         <div data-aos="fade-right">
                             <h1 className="text-2xl md:text-4xl font-medium my-6 uppercase">
-                                Achieving Excellence throught Collaboration
+                                Achieving Excellence through Collaboration
                             </h1>
                             <p>
                                 Royal Group was established in Jakarta on September 2013 The company's creation 

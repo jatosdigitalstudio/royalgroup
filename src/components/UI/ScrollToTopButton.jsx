@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const ScrollToTopContainerVariants = {
-    hide: { opacity: 0, y: 50 },
+    hide: { opacity: 0, y: 5 },
     show: { opacity: 1, y: 0 },
 };
 
@@ -20,22 +20,21 @@ export default function ScrollToTopButton() {
 
     useEffect(() => {
         return scrollYProgress.on('change', (latestValue) => {
-            if (latestValue > 0.5) {
+            if (latestValue > 0.1) {
                 controls.start('show');
             } else {
                 controls.start('hide');
             }
         });
     });
-
     return (
         <motion.button
-            className="fixed bottom-0 right-0 p-10 z-90"
+            className="fixed bottom-0 right-0 p-10 z-99"
             variants={ScrollToTopContainerVariants}
             initial="hide"
             animate={controls}
             onClick={scrollToTop}>
-            <div className="bg-[#3F3BF2] rounded-full p-4">
+            <div className="bg-[#000000] rounded-full p-4">
                 <FaArrowUp color="white" />
             </div>
         </motion.button>

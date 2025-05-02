@@ -1,5 +1,4 @@
 'use client';
-import { useRef } from 'react';
 import Link from 'next/link';
 import * as motion from "motion/react-client"
 import Image from 'next/image';
@@ -38,14 +37,16 @@ export default function Modal({ sector, onClose, modalRef }) {
                 <div className="grid grid-cols-1 gap-8 md:divide-y-2 overflow-y-auto">
                     {sector.companies.map((company, index) => (
                         <div className="min-h-36 pt-8 rounded-sm" key={index}>
-                            <div className="flex flex-col gap-10 justify-center items-center md:flex-row">
+                            <Link 
+                                href={`https://${company.link}`} target='_blank' rel="noreferrer" passHref={true}
+                                className="flex flex-col gap-10 justify-center items-center md:flex-row">
                                 <Image
                                     src={company.image} 
                                     alt={company.name}
                                     width={250}
                                     height={100}
                                 />
-                                <div className="flex flex-col gap-4 text-white">
+                                <div className="flex flex-col gap-4 text-white pointer-events-none">
                                     <h1 className="text-lg font-bold">{company.name}</h1>
                                     <p className="text-sm font-light text-justify">{company.description}</p>
                                     <div className="flex justify-start items-end ml-[-5px] mt-2 ">
@@ -53,7 +54,7 @@ export default function Modal({ sector, onClose, modalRef }) {
                                         <Link href={`https://${company.link}`} target='_blank' rel="noreferrer" passHref={true} className='text-xs'>Visit Website</Link>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     ))}
                 </div>
