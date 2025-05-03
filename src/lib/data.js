@@ -6,7 +6,7 @@ export const SECTOR = [
         subtitle: "building a secure and innovative indonesia",
         text: "In an ever-changing global landscape, defense and security play vital roles in safeguarding nations and ensuring the well being otheir citizens. We act as a one stop solution regarding defense and security providing what it is that matters in this field.",
         style: "row-span-2 ",
-        image: "/images/defence_security_01.jpg",
+        image: "/images/companies/01.jpeg",
         companies: [
             { 
                 name: 'PT Radika Karya Utama',
@@ -28,7 +28,7 @@ export const SECTOR = [
         subtitle: "Implementing secure and transparent blockchain solutions",
         text: "With the purpose of unlocking the full potential of blockchain technology, we plunged into the industry by delivering its immensepotential and promise for revolutionizing various business sectors.",
         style: "bg-center",
-        image: "/images/digital_transformation.jpg",
+        image: "/images/companies/02.jpeg",
         companies: [
             { 
                 name: 'RGMS', 
@@ -86,7 +86,7 @@ export const SECTOR = [
         subtitle: "Revolutionizing healthcare delivery to improve Life quality",
         text: "Healthcare plays a pivotal role in promoting and preserving the well-being of individuals and societies.Our services comes with awide range of services aimed at preventing, diagnosing, and managing diseases, as well as promoting overall health.",
         style: "col-start-2 row-start-2",
-        image: "/images/biotech_01.jpg",
+        image: "/images/companies/03.jpeg",
         companies: [
             { 
                 name: 'ASAREN',
@@ -114,7 +114,7 @@ export const SECTOR = [
         subtitle: "Driving digital transformation on Sustainability",
         text: "We are committed to driving sustainable digital transformation because it is essential for building a more equitable andenvironmentally responsible future. By focusing on eco-friendly technologies and inclusive access, we believe digital innovationcan empower communities, improve resource management, and foster a healthier planet for generations to come.",
         style: "row-span-2 col-start-3 row-start-1 min-h-[400px]",
-        image: "/images/sustainability_02.jpg",
+        image: "/images/companies/04.png",
         companies: [
             { 
                 name: 'Royal Solusi Karbon', 
