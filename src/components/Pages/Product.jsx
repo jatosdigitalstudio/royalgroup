@@ -1,7 +1,7 @@
 "use client"
 
 import {useState, useRef, useEffect} from "react";
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import Modal from '../UI/Modal';
 import Card from "../UI/Card";
 import { SECTOR } from "@/lib/data";
@@ -30,7 +30,7 @@ export default function Product() {
             <div className="container mx-auto px-6 lg:px-12" id='modal-root' >
                 <div className="flex flex-col justify-center items-center">
                     <div className="" data-aos="zoom-in">
-                        <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' />
+                        <ExportedImage src="/images/icon-about.png" width={50} height={50} alt='Icon Royal Group' />
                     </div>
                     <div className="text-center" data-aos="fade-up">
                         <h1 className="text-2xl uppercase text-blue my-2">Our Companies</h1>

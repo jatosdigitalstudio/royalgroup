@@ -1,6 +1,5 @@
 'use client';
-
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Card({ sector, onClick, style }) {
   return (
@@ -9,7 +8,7 @@ export default function Card({ sector, onClick, style }) {
       className={`${style} group relative w-full overflow-hidden shadow-md transition-all hover:shadow-xl`}
     >
       {/* Background Image */}
-      <Image
+      <ExportedImage
         src={sector.image}
         alt={sector.name}
         fill

@@ -6,7 +6,7 @@ export const SECTOR = [
         subtitle: "building a secure and innovative indonesia",
         text: "In an ever-changing global landscape, defense and security play vital roles in safeguarding nations and ensuring the well being otheir citizens. We act as a one stop solution regarding defense and security providing what it is that matters in this field.",
         style: "row-span-2 ",
-        image: "/images/companies/01.jpeg",
+        image: "/images/01.jpeg",
         companies: [
             { 
                 name: 'PT Radika Karya Utama',
@@ -28,7 +28,7 @@ export const SECTOR = [
         subtitle: "Implementing secure and transparent blockchain solutions",
         text: "With the purpose of unlocking the full potential of blockchain technology, we plunged into the industry by delivering its immensepotential and promise for revolutionizing various business sectors.",
         style: "bg-center",
-        image: "/images/companies/02.jpeg",
+        image: "/images/02.jpeg",
         companies: [
             { 
                 name: 'RGMS', 
@@ -86,7 +86,7 @@ export const SECTOR = [
         subtitle: "Revolutionizing healthcare delivery to improve Life quality",
         text: "Healthcare plays a pivotal role in promoting and preserving the well-being of individuals and societies.Our services comes with awide range of services aimed at preventing, diagnosing, and managing diseases, as well as promoting overall health.",
         style: "col-start-2 row-start-2",
-        image: "/images/companies/03.jpeg",
+        image: "/images/03.jpeg",
         companies: [
             { 
                 name: 'ASAREN',
@@ -114,7 +114,7 @@ export const SECTOR = [
         subtitle: "Driving digital transformation on Sustainability",
         text: "We are committed to driving sustainable digital transformation because it is essential for building a more equitable andenvironmentally responsible future. By focusing on eco-friendly technologies and inclusive access, we believe digital innovationcan empower communities, improve resource management, and foster a healthier planet for generations to come.",
         style: "row-span-2 col-start-3 row-start-1 min-h-[400px]",
-        image: "/images/companies/04.png",
+        image: "/images/04.png",
         companies: [
             { 
                 name: 'Royal Solusi Karbon', 
@@ -182,27 +182,27 @@ export const SECTOR = [
 export const HEROIMG = [
     {
         id : 1,
-        image : "/images/hero/hero1.png",
+        image : "/images/hero01.png",
         alt : "Royal Group Defense & Security",
     },
     {
         id : 2,
-        image : "/images/hero/hero2.png",
+        image : "/images/hero02.png",
         alt : "Royal Group ",
     },
     {
         id : 3,
-        image : "/images/hero/hero3.png",
+        image : "/images/hero03.png",
         alt : "Royal Group",
     },
     {
         id : 4,
-        image : "/images/hero/hero4.png",
+        image : "/images/hero04.png",
         alt : "Royal Group",
     },
     {
         id : 5,
-        image : "/images/hero/hero5.png",
+        image : "/images/hero05.png",
         alt : "Royal Group",
     },
 ]

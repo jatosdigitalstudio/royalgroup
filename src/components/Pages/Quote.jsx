@@ -1,13 +1,13 @@
 "use client"
 import React from 'react'
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Quote() {
     return (
       <div className='flex relative justify-center items-center py-32 px-6 bg-blue overflow-hidden'>
         <div className="flex flex-col text-center items-center  md:w-[50%] md:px-22 text-white z-30">
             <div className="" data-aos="zoom-in">
-              <Image src="/images/icon-w.png" width={50} height={50} alt='Icon Royal Group' className='mb-4 brightness-200' />
+              <ExportedImage src="/images/icon-w.png" width={50} height={50} alt='Icon Royal Group' className='mb-4 brightness-200' />
             </div>
             <div className="text-center" data-aos="fade-up">
               <h1 className='text-4xl md:text-6xl mb-6 uppercase'>Investing in tomorrow together</h1>
@@ -17,7 +17,7 @@ export default function Quote() {
             </div>
             
         </div>
-        <Image 
+        <ExportedImage 
             src="/images/icon-big.png" 
             alt="Logo Royal Group" 
             width={1000}

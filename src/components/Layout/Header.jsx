@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +27,7 @@ export default function Header() {
       <div className="md:container mx-auto p-4">
         <div className="flex justify-between items-center">
           <Link href="/">
-            <Image src="/images/logo-h-main.png" width={150} height={100} alt='Royal Group' />
+            <ExportedImage src="/images/logo-h-main.png" width={150} height={100} alt='Royal Group' />
           </Link>
 
           <div className="hidden md:flex space-x-8">

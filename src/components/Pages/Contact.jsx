@@ -1,5 +1,6 @@
 "use client"
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+ 
 import { useState } from "react";
 export default function Contact() {
     const [loading,setLoading] = useState(false)
@@ -48,17 +49,17 @@ export default function Contact() {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col justify-center items-center">
                     <div className="mb-12" data-aos="zoom-in">
-                        <Image src="/images/logo-h-main.png" width={300} height={100} alt="Logo Royal Group" className="mb-6" />
+                        <ExportedImage src="/images/logo-h-main.png" width={300} height={100} alt="Logo Royal Group" className="mb-6" />
                     </div>
                     
-                    <div className="grid grid-cols-1 gap-6">
+                    <div className="grid grid-cols-1 gap-6 place-items-center">
                         <div className="mb-6" data-aos="fade-up">
-                            <h1 className="font-bold mb-2">Office:</h1>
-                            <p>EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
+                            <h1 className="font-bold mb-2 text-center">Office:</h1>
+                            <p className="text-center">EightyEight@Kasablanca, 3rd Floor <br/> Jl. Raya Kasablanka, Kav. 88 <br/> South jakarta, 12870</p>
                         </div>
                         <div className="mb-6" data-aos="fade-up">
-                            <h1 className=" font-bold mb-2">Contact:</h1>
-                            <div className="flex flex-col">
+                            <h1 className=" font-bold mb-2 text-center">Contact:</h1>
+                            <div className="flex flex-col text-center">
                                 <span className="text-md">info@royalgroup.co.id</span>
                                 <span className="text-md">+6221-22831337</span>
                                 <span className="text-md">+6221-22832642</span>

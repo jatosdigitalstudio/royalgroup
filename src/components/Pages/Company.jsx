@@ -1,6 +1,6 @@
 "use client"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Company() {
     return (
@@ -24,7 +24,7 @@ export default function Company() {
                     </div>
                     <div className="text-black flex flex-col text-right mt-8 lg:px-24">
                         <div className="flex flex-col items-end" data-aos="zoom-in">
-                            <Image src="/images/icon.png" width={50} height={50} alt='Icon Royal Group' className='right-0' />
+                            <ExportedImage src="/images/icon-about.png" width={50} height={50} alt='Icon Royal Group' className='right-0' />
                             <h1 className="text-xl uppercase text-blue mt-2">About Us</h1>
                         </div>
                         <div data-aos="fade-right">

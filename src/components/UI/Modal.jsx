@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import * as motion from "motion/react-client"
-import Image from 'next/image';
 import { MdArrowRight } from "react-icons/md";
 
 export default function Modal({ sector, onClose, modalRef }) {
@@ -40,7 +39,7 @@ export default function Modal({ sector, onClose, modalRef }) {
                             <Link 
                                 href={`https://${company.link}`} target='_blank' rel="noreferrer" passHref={true}
                                 className="flex flex-col gap-10 justify-center items-center md:flex-row">
-                                <Image
+                                <img
                                     src={company.image} 
                                     alt={company.name}
                                     width={250}

@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { HEROIMG } from "@/lib/data";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Hero() {
   const settings = {
@@ -26,7 +26,7 @@ export default function Hero() {
         {
         HEROIMG.map((item) => (
             <div className="relative w-full h-screen overflow-hidden" key={item.id}>
-              <Image
+              <img
                   src={item.image}
                   alt={item.alt}
                   width={0}
